@@ -1,3 +1,9 @@
 http://www.libsdl.org/docs
 http://www.libsdl.org/cgi/docwiki.fcg
 
+Samples:
+Jogo da velha
+http://www.sdltutorials.com/sdl-tutorial-tic-tac-toe
+https://github.com/m0sk1t/TicTacToe.git
+	g++ *.cpp `pkg-config --libs --cflags sdl SDL_image` -g3
+

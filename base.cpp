@@ -112,11 +112,11 @@ int main(int argc, char *argv[]) {
 						velx = vely = 0;
 					if (evento.jhat.value & SDL_HAT_RIGHT)
 						velx = 2;
-					else if (evento.jhat.value & SDL_HAT_LEFT)
-                        velx = -2;
-					else if (evento.jhat.value & SDL_HAT_UP)
+					if (evento.jhat.value & SDL_HAT_LEFT)
+						velx = -2;
+					if (evento.jhat.value & SDL_HAT_UP)
 						vely = -2;
-					else if (evento.jhat.value & SDL_HAT_DOWN)
+					if (evento.jhat.value & SDL_HAT_DOWN)
 						vely = 2;
 			}
 		}
